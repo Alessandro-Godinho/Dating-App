@@ -1,0 +1,19 @@
+<form #registerForm="ngForm" (ngSubmit)="register()" >
+  <h2 class="text-center text-primary">Entrar</h2>
+  <hr>
+  <div class="container">
+    <div class="form-group row justify-content-center">
+      <i class="fa fa-user mr-2 align-self-center"></i>
+      <input type="text" class="form-control " placeholder="Usuário..." [(ngModel)]="model.username" required name="username">
+    </div>
+    <div class="form-group row justify-content-center">
+      <i class="fa fa-key mr-2 align-self-center"></i>
+      <input type="password" class="form-control " placeholder="Senha..." [(ngModel)]="model.password" required name="password">
+    </div>
+
+  <div class="form-group text-center">
+    <button class="btn btn-success mr-2" type="submit" (click)="register()">Cadastrar</button>
+    <button class="btn btn-default" type="button" (click)="cancel()" >Cancelar</button>
+  </div>
+</div>
+</form>
