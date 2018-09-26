@@ -1,0 +1,9 @@
+
+.card-body {
+  padding: 0 25px;
+  background-color: white;
+}
+.card-footer{
+  padding: 10px 15px;
+  background-color: white;
+}
